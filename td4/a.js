@@ -1,9 +1,6 @@
 'use strict'
 
-const $=function(id){
-    return document.getElementById(id);
-};
-
+const $=(id)=>document.getElementById(id);
 
 const bt = $("bt-hello");
 bt.addEventListener("click", function f(){
@@ -14,7 +11,7 @@ $("bt-clear").addEventListener("click", function(){
     document.body.innerHTML="";
 });
 
-const $=(id)=>document.getElementById(id);
+
 
 const addEvt=function (type,id,listener){
     const elm=$(id);
@@ -36,4 +33,16 @@ $("bt-dom").addEventListener("click", function(){
     img.src="https://media.tenor.com/tFIicz8nikQAAAAC/auuuuuuhhhh-aaaaaaa.gif"
     img.style.width="200px"
     $("content").appendChild(img);
+});
+
+//Ex 2 : Add-Select
+addEvt("click", "bt-add", function(){
+    document.querySelectorAll(".liste").forEach(
+        (elm)=>{
+            const tagName=elm.tagName=="SELECT"?"option":"li";
+        const li=document.createElement("li");
+        li.innerText=$("selected-text").value;
+        elm.appendChild(li);
+        };
+    );
 });
