@@ -1,6 +1,103 @@
-.main{
-	background-image: url("./../images/df-min.jpg");
-	text-align: center;
-
+body {
+	margin: 0;
+    padding: 0;
+    background: none;
+	font-family: Trebuchet MS, sans-serif;
 }
-body(
+
+.titres {
+	font-size: 18px;
+	padding:10px;
+	text-align:left;
+}
+
+.background {
+    background-image: url('./../images/conseil-gestion.jpg');
+	background-size: 50% auto;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color:	#D3D3D3;
+}
+
+.texte {
+	text-align:left;
+	font-size: 12px;
+	padding-bottom:15px;
+	padding-left:12px;
+	
+}
+.centre {
+    text-align: center;
+    position: relative;
+}
+
+.boites {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 350px;
+	border-radius: 20px;
+}
+
+.boite {
+    width: 170px;
+    height: 200px;
+    background: #fff;
+    margin: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+	box-shadow: 1px 1px 5px black;
+	border-radius: 20px;
+}
+
+.icone {
+    width: 30px;
+    height: 30px;
+    background: #f86c3c;
+	border-radius:100%;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+.boite-orange {
+    background: #f86c3c;
+    padding: 20px;
+    width: 450px;
+    margin: 10px auto;
+    text-align: center;
+	box-shadow: 1px 1px 5px black;
+	border-radius: 30px;
+}
+
+.tres-petit-texte {
+	font-size: 16px;
+	color: #ffffff;
+	margin-bottom:5px
+}
+
+.petit-texte {
+	font-weight: 400;
+	letter-spacing: 3px;
+    font-size: 16px;
+    margin-bottom: 10px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.gros-texte {
+    font-size: 40px;
+	color: #ffffff
+}
